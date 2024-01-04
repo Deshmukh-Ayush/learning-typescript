@@ -1,0 +1,1 @@
+My name is Ayush Deshmukh and this repository is dedicated to typescript learnings.
