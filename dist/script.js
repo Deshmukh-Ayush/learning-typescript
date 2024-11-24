@@ -1,26 +1,27 @@
+"use strict";
 // typescript is basically a language where type is important
 // Number, String, Boolean
 // Arrays, Tupples
 // Any, Unknown, Never, Void
 // enums
 // Number, String, Boolean
-var variable = 12;
-var variable1 = "this thing is string";
-var variable2 = ["this", "is", "an", "array"];
-var variable3 = true || false;
+let variable = 12;
+let variable1 = "this thing is string";
+let variable2 = ["this", "is", "an", "array"];
+let variable3 = true || false;
 // you don'e have to define type in the above cases. but if you are making a variable with no value you have to provide a type.
 // let variable4; -> this will throw erroe because it's type will be any
 // never use "any" type in ts.
-var variable4; // write way
+let variable4; // write way
 // Arrays, Tupples
-var variable5 = ["this", "is", "an", "array"];
+let variable5 = ["this", "is", "an", "array"];
 // already gave above an example;
 // an array which will contain multiple types will be called as a tuple;
-var variable6 = ["string", 23, true];
+let variable6 = ["string", 23, true];
 // Any, Unknown, Never, Void
 // these are just interview question;
-var variable7;
-var variable8; // when you are not sure what will come here;
+let variable7;
+let variable8; // when you are not sure what will come here;
 // function variable9(): never {
 // return 12;
 // }
@@ -43,3 +44,18 @@ var userDetails;
     userDetails["gender"] = "male";
 })(userDetails || (userDetails = {}));
 console.log(userDetails.name);
+// type inference;
+// typescript implicitly(automatically) defines types;
+let variable11 = 12;
+let variable12 = "string";
+let variable13 = true;
+// Union and intersection types
+let variable14;
+variable14 = "abcd";
+variable14 = null;
+let variable15 = {
+    name: "Bhopal",
+    population: 1230000,
+    planetNumber: 122332324342,
+    planetId: "hbj543k554j35h4jk365"
+};
