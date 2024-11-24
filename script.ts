@@ -79,3 +79,22 @@ let variable15: citiesInPlanet = {
     planetNumber: 122332324342,
     planetId: "hbj543k554j35h4jk365"
 }
+
+
+// primitive type aliases and object type aliases
+// primitive 
+type variable16 =  string;
+let variable16: variable16; // accepts only only thing
+
+// object
+type Human = {
+    name: string,
+    age: number,
+    email: string
+}
+
+let variable17: Human = {
+    name: "Ayush",
+    age: 19,
+    email: "ayush@ayush.com"
+}
