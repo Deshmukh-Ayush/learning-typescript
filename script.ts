@@ -48,3 +48,34 @@ enum userDetails {
 }
 
 console.log(userDetails.name)
+
+// type inference;
+// typescript implicitly(automatically) defines types;
+let variable11 = 12;
+let variable12 = "string";
+let variable13 = true;
+
+// Union and intersection types
+let variable14: string | null;
+variable14 = "abcd"
+variable14 = null
+
+// intersection types etc
+type cities = {
+    name: string,
+    population: number
+}
+
+type planet = {
+    planetNumber: number,
+    planetId: string
+}
+
+type citiesInPlanet = cities & planet;
+
+let variable15: citiesInPlanet = {
+    name: "Bhopal",
+    population: 1230000,
+    planetNumber: 122332324342,
+    planetId: "hbj543k554j35h4jk365"
+}
