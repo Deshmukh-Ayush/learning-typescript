@@ -98,3 +98,35 @@ let variable17: Human = {
     age: 19,
     email: "ayush@ayush.com"
 }
+
+// interface
+// syntax
+interface variable18 {
+    name: string,
+    age: number
+}
+
+interface variable19 extends variable18 {
+    phone: number,
+    isFollowing: true
+}
+
+const variable20 = (pops: variable19) => {
+    return pops.age //etc
+}
+
+// class
+// OOPS
+// object oriented programming
+// syntax
+
+class variable21 {
+    name = "ayush";
+    age = 223;
+    place = "danish nagar"
+    city = "bhopal"
+
+    isGettingUserDetails() {
+        console.log("Getting user details");
+    }
+}
